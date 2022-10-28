@@ -23,7 +23,7 @@ namespace WebApplication1.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
-            modelBuilder.Entity("LanchesMac.Models.Lanche", b =>
+            modelBuilder.Entity("WebApplication1.Models.Lanche", b =>
                 {
                     b.Property<int>("LancheId")
                         .ValueGeneratedOnAdd()
@@ -96,7 +96,7 @@ namespace WebApplication1.Migrations
                     b.ToTable("Categorias");
                 });
 
-            modelBuilder.Entity("LanchesMac.Models.Lanche", b =>
+            modelBuilder.Entity("WebApplication1.Models.Lanche", b =>
                 {
                     b.HasOne("WebApplication1.Models.Categoria", "Categoria")
                         .WithMany("Lanches")

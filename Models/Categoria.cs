@@ -1,4 +1,4 @@
-﻿using LanchesMac.Models;
+﻿using WebApplication1.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;

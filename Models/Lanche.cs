@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations.Schema;
 using WebApplication1.Models;
 
-namespace LanchesMac.Models
+namespace WebApplication1.Models
 {
     [Table("Lanches")]
     public class Lanche
