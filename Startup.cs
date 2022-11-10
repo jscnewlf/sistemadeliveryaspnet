@@ -1,5 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using WebApplication1.Context;
+using WebApplication1.Repositories;
+using WebApplication1.Repositories.Interfaces;
 
 namespace WebApplication1;
 public class Startup
@@ -17,6 +19,8 @@ public class Startup
         services.AddDbContext<AppDbContext>(options =>
         options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
+        services.AddTransient<ILancheRepository, LancheRepository>();
+        services.AddTransient<ICategoriaRepository, CategoriaRepository>();
         services.AddControllersWithViews();
     }
 

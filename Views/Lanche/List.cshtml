@@ -1,0 +1,18 @@
+﻿@model LancheListViewModel;
+
+<div class="header">
+    @* <h2>@ViewData["Título"]<span> - @ViewData["Data"]</span></h2>*@
+    <h2>@Model.CategoriaAtual</h2>
+    <hr />
+    <p>@ViewBag.Total (<span>@ViewBag.TotalLanches</span>)</p>
+
+</div>
+
+
+
+<div class="lanche-bloco">
+    @foreach (var lanche in Model.Lanches)
+    {
+      <partial name="_LanchesResumo" for="@lanche" />
+    }
+</div>

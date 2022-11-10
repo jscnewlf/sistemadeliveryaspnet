@@ -1,0 +1,12 @@
+﻿@model Lanche
+
+
+
+<div class="lanche-item">
+    <h4>@Model.Nome</h4>
+    <img src="@Model.ImagemUrl" />
+    <div class="detalhe">
+        <p class="descricao">@Model.DescricaoCurta</p>
+        <p><span>@Model.Preco.ToString("c")</span></p>
+    </div>
+</div>
